@@ -17,13 +17,18 @@ body {
   font-weight: 300;
   font-size: 16px;
   line-height: 1.6;
-  margin: 10px;
+  margin: 150px 10px;
 }
 
 header {
   font-size: 16px;
   font-weight: 300;
   border-bottom: 0.5px solid rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 10px;
+  overflow: hidden;
+  width: 100%;
+  background-color: white;
 }
 
 h1 {
@@ -57,9 +62,23 @@ a:active {
   color: #499948;
 }
 
+.standard-label {
+  display: block;
+  width: 500px;
+  margin: 8px auto;
+}
+
+#contact-form {
+  width: 600px;
+  background-color: #ebebeb;
+  padding: 10px 10px;
+  margin: 10px 50px;
+
+}
+
 button {
   border: none;
-  display: inline-block;
+  display: block;
   font-family: inherit;
   background-color: #DCDCDC;
   color: #000;
@@ -68,12 +87,14 @@ button {
   border-radius: 10px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   -webkit-transition: 0.2s opacity;
+  -o-transition: 0.2s opacity;
   transition: 0.2s opacity;
+  margin: 8px auto;
 }
 
 input[type="submit"] {
   border: none;
-  display: inline-block;
+  display: block;
   font-family: inherit;
   background-color: #DCDCDC;
   color: #000;
@@ -82,12 +103,14 @@ input[type="submit"] {
   border-radius: 10px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   -webkit-transition: 0.2s opacity;
+  -o-transition: 0.2s opacity;
   transition: 0.2s opacity;
+  margin: 8px auto;
 }
 
 .button {
   border: none;
-  display: inline-block;
+  display: block;
   font-family: inherit;
   background-color: #DCDCDC;
   color: #000;
@@ -96,7 +119,9 @@ input[type="submit"] {
   border-radius: 10px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   -webkit-transition: 0.2s opacity;
+  -o-transition: 0.2s opacity;
   transition: 0.2s opacity;
+  margin: 8px auto;
 }
 
 button:hover,
@@ -107,6 +132,17 @@ input[type="submit"]:focus,
 .button:focus {
   cursor: pointer;
   opacity: 0.8;
+}
+
+input[type="email"],
+input[type="tel"],
+#user-message {
+  width: 500px;
+  padding: 10px 10px;
+  margin: 8px auto;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
 .navigation-list__item--active {
@@ -134,8 +170,8 @@ input[type="submit"]:focus,
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-align: center;
 }
 
@@ -145,7 +181,7 @@ input[type="submit"]:focus,
 
 * {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .page-header {
@@ -157,19 +193,21 @@ input[type="submit"]:focus,
 
 .page-header__item {
   -webkit-box-flex: 0;
-  -ms-flex: 0 1 200px;
-  flex: 0 1 200px;
+      -ms-flex: 0 1 200px;
+          flex: 0 1 200px;
 }
 
 .page-header__item:last-child {
   -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   text-align: right;
 }
 
 .navigation-list {
   list-style-type: none;
+  margin-right: 30px;
+  margin-top: 20px;
 }
 
 .navigation-list li {
@@ -191,7 +229,7 @@ input[type="submit"]:focus,
 }
 
 .grid__item {
-  background-color: #D3D3D3;
+  background-color: #ebebeb;
   padding: 10px;
   width: auto;
 }
@@ -230,6 +268,47 @@ input[type="submit"]:focus,
     font-size: 22px;
   }
 }
+.personal-text {
+  width: 700px;
+  display: block;
+  margin: 0 auto;
+}
+
+.table-heading {
+  padding-left: 408px;
+}
+
+.skill-table {
+  text-align: left;
+  padding: 20px;
+  width: 700px;
+  display: block;
+  margin: 10px auto;
+  background-color: #ebebeb;
+}
+
+.CV-button {
+  width: 150px;
+  display: block;
+  margin: 30px auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  padding: 20px;
+}
+
+th {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+td {
+  text-align: center;
+  padding: 10px;
+}
 
 .berlin-illustration {
   max-width: 90%;
@@ -263,61 +342,61 @@ input[type="submit"]:focus,
 
 .sun {
   -webkit-animation: 4s color-change infinite alternate linear;
-  animation: 4s color-change infinite alternate linear;
+          animation: 4s color-change infinite alternate linear;
 }
 
 @-webkit-keyframes cloud-move {
   from {
     -webkit-transform: translate(0, 50px);
-    transform: translate(0, 50px);
+            transform: translate(0, 50px);
   }
   to {
     -webkit-transform: translate(200px, 50px);
-    transform: translate(200px, 50px);
+            transform: translate(200px, 50px);
   }
 }
 
 @keyframes cloud-move {
   from {
     -webkit-transform: translate(0, 50px);
-    transform: translate(0, 50px);
+            transform: translate(0, 50px);
   }
   to {
     -webkit-transform: translate(200px, 50px);
-    transform: translate(200px, 50px);
+            transform: translate(200px, 50px);
   }
 }
 
 .cloud-front {
   -webkit-animation: 30s cloud-move infinite alternate linear;
-  animation: 30s cloud-move infinite alternate linear;
+          animation: 30s cloud-move infinite alternate linear;
 }
 
 @-webkit-keyframes cloud-move-reverse {
   from {
     -webkit-transform: translate(446px, 48px);
-    transform: translate(446px, 48px);
+            transform: translate(446px, 48px);
   }
   to {
     -webkit-transform: translate(100px, 48px);
-    transform: translate(100px, 48px);
+            transform: translate(100px, 48px);
   }
 }
 
 @keyframes cloud-move-reverse {
   from {
     -webkit-transform: translate(446px, 48px);
-    transform: translate(446px, 48px);
+            transform: translate(446px, 48px);
   }
   to {
     -webkit-transform: translate(100px, 48px);
-    transform: translate(100px, 48px);
+            transform: translate(100px, 48px);
   }
 }
 
 .cloud-back {
   -webkit-animation: 34s cloud-move-reverse infinite alternate linear;
-  animation: 34s cloud-move-reverse infinite alternate linear;
+          animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
 .navigation-list li a {
@@ -333,6 +412,7 @@ input[type="submit"]:focus,
   font-size: 16px;
   top: 0px;
   -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
   transition: all 0.3s;
 }
 
@@ -342,6 +422,7 @@ input[type="submit"]:focus,
   font-size: 16px;
   top: 0px;
   -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
   transition: all 0.3s;
 }
 
@@ -349,18 +430,21 @@ input[type="submit"]:focus,
   content: '(';
   left: 0px;
   -webkit-transform: translateX(10px);
-  transform: translateX(10px);
+      -ms-transform: translateX(10px);
+          transform: translateX(10px);
 }
 
 .navigation-list li a:after {
   content: ')';
   right: 0px;
   -webkit-transform: translateX(-10px);
-  transform: translateX(-10px);
+      -ms-transform: translateX(-10px);
+          transform: translateX(-10px);
 }
 
 .navigation-list li a:hover:before, .navigation-list li a:hover:after {
   opacity: 1;
   -webkit-transform: translateX(0px);
-  transform: translateX(0px);
+      -ms-transform: translateX(0px);
+          transform: translateX(0px);
 }

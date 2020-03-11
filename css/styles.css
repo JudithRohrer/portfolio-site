@@ -12,6 +12,7 @@ font-family: 'Nunito Sans', sans-serif;
 :root {
   --primary-color: #808080;
   --secondary-color: #DCDCDC;
+  --warm-grey: #ebebeb;
   --dark-grey: #2b2b2b;
   --green: #499948;
   --text-color: #000;
@@ -36,13 +37,18 @@ body {
   font-weight: var(--font-weight-v-light);
   font-size: var(--font-size-v-small);
   line-height: 1.6;
-  margin: 10px;
+  margin: 150px 10px;
 }
 
 header {
   font-size: var(--font-size-v-small);
   font-weight: var(--font-weight-v-light);
   border-bottom: 0.5px solid var(--button-shadow);
+  position: fixed;
+  top: 10px;
+  overflow: hidden;
+  width: 100%;
+  background-color: white;
 }
 
 h1 {
@@ -76,11 +82,25 @@ a:active {
   color: var(--green);
 }
 
+.standard-label {
+  display: block;
+  width: 500px;
+  margin: 8px auto;
+}
+
+#contact-form {
+  width: 600px;
+  background-color: var(--warm-grey);
+  padding: 10px 10px;
+  margin: 10px 50px;
+
+}
+
 button,
 input[type="submit"],
 .button {
   border: none;
-  display: inline-block;
+  display: block;
   font-family: inherit;
   background-color: var(--secondary-color);
   color: var(--text-color);
@@ -89,6 +109,7 @@ input[type="submit"],
   border-radius: 10px;
   border-bottom: 2px solid var(--button-shadow);
   transition: 0.2s opacity;
+  margin: 8px auto;
 }
 
 button:hover,
@@ -99,6 +120,17 @@ input[type="submit"]:focus,
 .button:focus {
   cursor: pointer;
   opacity: 0.8;
+}
+
+input[type="email"],
+input[type="tel"],
+#user-message {
+  width: 500px;
+  padding: 10px 10px;
+  margin: 8px auto;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
 .navigation-list__item--active {
@@ -150,6 +182,8 @@ input[type="submit"]:focus,
 
 .navigation-list {
   list-style-type: none;
+  margin-right: 30px;
+  margin-top: 20px;
 }
 
 .navigation-list li {
@@ -169,7 +203,7 @@ input[type="submit"]:focus,
 }
 
 .grid__item {
-  background-color: var(--lightgrey);
+  background-color: var(--warm-grey);
   padding: 10px;
   width: auto;
 }
@@ -202,6 +236,47 @@ input[type="submit"]:focus,
   h1 {
     font-size: var(--font-size-medium);
   }
+}
+.personal-text {
+  width: 700px;
+  display: block;
+  margin: 0 auto;
+}
+
+.table-heading {
+  padding-left: 408px;
+}
+
+.skill-table {
+  text-align: left;
+  padding: 20px;
+  width: 700px;
+  display: block;
+  margin: 10px auto;
+  background-color: var(--warm-grey);
+}
+
+.CV-button {
+  width: 150px;
+  display: block;
+  margin: 30px auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  padding: 20px;
+}
+
+th {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid var(--button-shadow);
+}
+
+td {
+  text-align: center;
+  padding: 10px;
 }
 
 .berlin-illustration {
