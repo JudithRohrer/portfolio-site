@@ -45,7 +45,7 @@ header {
   font-weight: var(--font-weight-v-light);
   border-bottom: 0.5px solid var(--button-shadow);
   position: fixed;
-  top: 10px;
+  top: 0px;
   overflow: hidden;
   width: 100%;
   background-color: white;
@@ -160,6 +160,7 @@ input[type="tel"],
 
 #logo__header {
   height: 70px;
+  margin-top: 5px;
 }
 
 * {
@@ -183,7 +184,7 @@ input[type="tel"],
 .navigation-list {
   list-style-type: none;
   margin-right: 30px;
-  margin-top: 20px;
+  margin-top: 25px;
 }
 
 .navigation-list li {

@@ -25,7 +25,7 @@ header {
   font-weight: 300;
   border-bottom: 0.5px solid rgba(0, 0, 0, 0.3);
   position: fixed;
-  top: 10px;
+  top: 0px;
   overflow: hidden;
   width: 100%;
   background-color: white;
@@ -177,6 +177,7 @@ input[type="tel"],
 
 #logo__header {
   height: 70px;
+  margin-top: 5px;
 }
 
 * {
@@ -207,7 +208,7 @@ input[type="tel"],
 .navigation-list {
   list-style-type: none;
   margin-right: 30px;
-  margin-top: 20px;
+  margin-top: 25px;
 }
 
 .navigation-list li {
