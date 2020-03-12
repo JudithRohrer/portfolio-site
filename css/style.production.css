@@ -17,7 +17,7 @@ body {
   font-weight: 300;
   font-size: 16px;
   line-height: 1.6;
-  margin: 150px 10px;
+  margin-top: 150px;
 }
 
 header {
@@ -72,8 +72,6 @@ a:active {
   width: 600px;
   background-color: #ebebeb;
   padding: 10px 10px;
-  margin: 10px 50px;
-
 }
 
 button {
@@ -87,7 +85,6 @@ button {
   border-radius: 10px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   -webkit-transition: 0.2s opacity;
-  -o-transition: 0.2s opacity;
   transition: 0.2s opacity;
   margin: 8px auto;
 }
@@ -103,7 +100,6 @@ input[type="submit"] {
   border-radius: 10px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   -webkit-transition: 0.2s opacity;
-  -o-transition: 0.2s opacity;
   transition: 0.2s opacity;
   margin: 8px auto;
 }
@@ -119,7 +115,6 @@ input[type="submit"] {
   border-radius: 10px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   -webkit-transition: 0.2s opacity;
-  -o-transition: 0.2s opacity;
   transition: 0.2s opacity;
   margin: 8px auto;
 }
@@ -215,11 +210,13 @@ input[type="tel"],
   display: inline-block;
   margin-left: 15px;
 }
+
 /* Grid fallback*/
 .grid__item {
   display: inline-block;
   width: 33%;
 }
+
 /* Styling CSS grid*/
 .grid {
   display: -ms-grid;
@@ -269,6 +266,7 @@ input[type="tel"],
     font-size: 22px;
   }
 }
+
 .personal-text {
   width: 700px;
   display: block;
@@ -276,7 +274,8 @@ input[type="tel"],
 }
 
 .table-heading {
-  padding-left: 408px;
+  width: 700px;
+  margin: 0 auto;
 }
 
 .skill-table {
@@ -284,7 +283,7 @@ input[type="tel"],
   padding: 20px;
   width: 700px;
   display: block;
-  margin: 10px auto;
+  margin: 0 auto;
   background-color: #ebebeb;
 }
 
@@ -413,7 +412,6 @@ td {
   font-size: 16px;
   top: 0px;
   -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
 }
 
@@ -423,7 +421,6 @@ td {
   font-size: 16px;
   top: 0px;
   -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
   transition: all 0.3s;
 }
 
@@ -431,7 +428,6 @@ td {
   content: '(';
   left: 0px;
   -webkit-transform: translateX(10px);
-      -ms-transform: translateX(10px);
           transform: translateX(10px);
 }
 
@@ -439,13 +435,16 @@ td {
   content: ')';
   right: 0px;
   -webkit-transform: translateX(-10px);
-      -ms-transform: translateX(-10px);
           transform: translateX(-10px);
 }
 
 .navigation-list li a:hover:before, .navigation-list li a:hover:after {
   opacity: 1;
   -webkit-transform: translateX(0px);
-      -ms-transform: translateX(0px);
           transform: translateX(0px);
+}
+
+.content-contactpage {
+  width: 600px;
+  margin: 0 auto;
 }

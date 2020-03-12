@@ -37,7 +37,7 @@ body {
   font-weight: var(--font-weight-v-light);
   font-size: var(--font-size-v-small);
   line-height: 1.6;
-  margin: 150px 10px;
+  margin-top: 150px;
 }
 
 header {
@@ -92,8 +92,6 @@ a:active {
   width: 600px;
   background-color: var(--warm-grey);
   padding: 10px 10px;
-  margin: 10px 50px;
-
 }
 
 button,
@@ -191,11 +189,13 @@ input[type="tel"],
   display: inline-block;
   margin-left: 15px;
 }
+
 /* Grid fallback*/
 .grid__item {
   display: inline-block;
   width: 33%;
 }
+
 /* Styling CSS grid*/
 .grid {
   display: grid;
@@ -238,6 +238,7 @@ input[type="tel"],
     font-size: var(--font-size-medium);
   }
 }
+
 .personal-text {
   width: 700px;
   display: block;
@@ -245,7 +246,8 @@ input[type="tel"],
 }
 
 .table-heading {
-  padding-left: 408px;
+  width: 700px;
+  margin: 0 auto;
 }
 
 .skill-table {
@@ -253,7 +255,7 @@ input[type="tel"],
   padding: 20px;
   width: 700px;
   display: block;
-  margin: 10px auto;
+  margin: 0 auto;
   background-color: var(--warm-grey);
 }
 
@@ -358,4 +360,9 @@ td {
 .navigation-list li a:hover:before, .navigation-list li a:hover:after {
   opacity: 1;
   transform: translateX(0px);
+}
+
+.content-contactpage {
+  width: 600px;
+  margin: 0 auto;
 }
