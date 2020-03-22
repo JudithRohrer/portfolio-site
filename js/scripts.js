@@ -7,13 +7,14 @@ var $telInput = document.querySelector('#contact-tel');
 function showErrorEmail($input, message) {
   var $container = $input.parentElement;
 
-  var error = $container.querySelector('.error-message');
+  var error = $container.querySelector('#error-mail');
   if (error) {
     $container.removeChild(error);
   }
   if (message) {
     var error = document.createElement('div');
     error.classList.add('error-message');
+    error.setAttribute('id','error-mail');
     error.innerText = message;
     $container.appendChild(error);
   }
@@ -22,13 +23,14 @@ function showErrorEmail($input, message) {
 function showErrorTel($input, message) {
   var $container = $input.parentElement;
 
-  var error = $container.querySelector('.error-message');
+  var error = $container.querySelector('#error-tel');
   if (error) {
     $container.removeChild(error);
   }
   if (message) {
     var error = document.createElement('div');
     error.classList.add('error-message');
+    error.setAttribute('id','error-tel')
     error.innerText = message;
     $container.appendChild(error);
   }
