@@ -45,12 +45,9 @@ function validateEmail() {
     return false;
   }
 
-  if (value.indexOf('@') === -1) {
-    showErrorEmail($emailInput, 'Please enter a valid email address.');
-    return false;
-  }
+  var isEmailValid = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(value);
 
-  if (value.indexOf('.') === -1) {
+  if (!isEmailValid) {
     showErrorEmail($emailInput, 'Please enter a valid email address.');
     return false;
   }
@@ -67,7 +64,9 @@ function validateTel() {
     return false;
   }
 
-  if ((value.length < 10) || (value.length > 15)) {
+  var isTelValid = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/.test(value);
+
+  if (!isTelValid) {
     showErrorTel($telInput, 'Invalide number!');
     return false;
   }
