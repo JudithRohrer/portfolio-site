@@ -4,7 +4,22 @@ var $form = document.querySelector('#contact-form');
 var $emailInput = document.querySelector('#contact-email');
 var $telInput = document.querySelector('#contact-tel');
 
-function showErrorMessage($input, message) {
+function showErrorEmail($input, message) {
+  var $container = $input.parentElement;
+
+  var error = $container.querySelector('.error-message');
+  if (error) {
+    $container.removeChild(error);
+  }
+  if (message) {
+    var error = document.createElement('div');
+    error.classList.add('error-message');
+    error.innerText = message;
+    $container.appendChild(error);
+  }
+}
+
+function showErrorTel($input, message) {
   var $container = $input.parentElement;
 
   var error = $container.querySelector('.error-message');
@@ -24,21 +39,21 @@ function validateEmail() {
   var value = $emailInput.value;
 
   if (!value) {
-    showErrorMessage($emailInput, 'Email is a required field.');
+    showErrorEmail($emailInput, 'Email is a required field.');
     return false;
   }
 
   if (value.indexOf('@') === -1) {
-    showErrorMessage($emailInput, 'Please enter a valid email address.');
+    showErrorEmail($emailInput, 'Please enter a valid email address.');
     return false;
   }
 
   if (value.indexOf('.') === -1) {
-    showErrorMessage($emailInput, 'Please enter a valid email address.');
+    showErrorEmail($emailInput, 'Please enter a valid email address.');
     return false;
   }
 
-  showErrorMessage($emailInput, null);
+  showErrorEmail($emailInput, null);
   return true;
 }
 
@@ -46,21 +61,16 @@ function validateTel() {
   var value = $telInput.value;
 
   if (!value) {
-    showErrorMessage($telInput, 'Telephone is a required field.');
+    showErrorTel($telInput, 'Telephone is a required field.');
     return false;
   }
 
-  if (value.length < 10) {
-    showErrorMessage($telInput, 'Invalide number!');
+  if ((value.length < 10) || (value.length > 15)) {
+    showErrorTel($telInput, 'Invalide number!');
     return false;
   }
 
-  if (value.length > 15) {
-    showErrorMessage($telInput, 'Invalide number!');
-    return false;
-  }
-
-  showErrorMessage($telInput, null);
+  showErrorTel($telInput, null);
   return true;
 }
 

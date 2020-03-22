@@ -448,3 +448,8 @@ td {
   width: 600px;
   margin: 0 auto;
 }
+
+
+.error-message {
+  color: #ff000d;
+}
