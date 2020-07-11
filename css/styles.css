@@ -66,6 +66,11 @@ h3 {
   font-weight: var(--font-weight-bold);
 }
 
+span {
+  background: black;
+  color: white;
+}
+
 a {
   color: var(--primary-color);
 }
@@ -263,6 +268,12 @@ input[type="tel"],
   width: 150px;
   display: block;
   margin: 30px auto;
+}
+
+.screenshot {
+  display: block;
+  border: 1px solid var(--dark-grey);
+  margin: 50px auto;
 }
 
 table {
