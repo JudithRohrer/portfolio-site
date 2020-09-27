@@ -95,12 +95,6 @@ a:active {
   margin: 8px auto;
 }
 
-#contact-form {
-  width: 600px;
-  background-color: var(--warm-grey);
-  padding: 10px 10px;
-}
-
 button,
 input[type="submit"],
 .button {
@@ -147,13 +141,14 @@ input[type="tel"],
   float: left;
   width: 250px;
   height: auto;
-  margin-right: 40px;
+  margin-right: 100px;
+  margin-bottom: 50px;
   border-radius: 50%;
 }
 
 .profile {
   max-width: 700px;
-  margin: 100px auto;
+  margin: 200px auto;
 }
 
 .page-footer {
@@ -247,34 +242,42 @@ input[type="tel"],
 }
 
 .personal-text {
-  width: 700px;
-  display: block;
+  width: 100%;
   margin: 0 auto;
 }
 
 .table-heading {
-  width: 700px;
+  width: 100%;
   margin: 0 auto;
 }
 
 .skill-table {
   text-align: left;
   padding: 20px;
-  width: 700px;
-  display: block;
+  width: 100%;
+  display: flex;
   margin: 0 auto;
   background-color: var(--warm-grey);
 }
 
+.personal-text {
+max-width: 100%;
+display: block;
+}
+
 .CV-button {
   width: 150px;
-  display: block;
+  display: flex;
   margin: 30px auto;
+}
+
+.navbar {
+  background-color: white;
 }
 
 .screenshot {
   display: block;
-  border: 1px solid var(--dark-grey);
+  border: 0.5px solid var(--dark-grey);
   margin: 50px auto;
 }
 

@@ -6,13 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contact Judith Rohrer</title>
   <link rel="shortcut icon" href="img/favicon-96x96.ico">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700,800,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700,800,900&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/style.production.css">
 </head>
 
 <body>
-  <header class="page-header">
+  <!-- <header class="page-header">
     <a href="index.html"><img class="page-header__item" id="logo__header" src="img/Logo_Judith_Rohrer.png" alt="Logo
     of Judith Rohrer. A geometric black fox with Judith Rohrer written in capital letters next to it"></a>
     <nav class="main-navigation page-header__item">
@@ -31,9 +35,27 @@
         </li>
       </ul>
     </nav>
-  </header>
-  <div class="content-contactpage">
-    <h1>Let's get in contact!</h1>
+  </header> -->
+
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="index.html"><img src="img/Logo_Judith_Rohrer.png" height="65"
+        class="d-inline-block align-top" alt="Logo of Judith Rohrer. A geometric black fox on white background." />
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" href="index.html">Home</a>
+        <a class="nav-item nav-link" href="work.html">Work</a>
+        <a class="nav-item nav-link" href="about.html">About</a>
+        <a class="nav-item nav-link active" href="contact.html">Contact<span class="sr-only">(current)</span></a>
+      </div>
+    </div>
+  </nav>
+
+
   <!--  <form method="post" id="contact-form">
       <label class="standard-label" for="contact-email">Email:</label>
       <input type="email" id="contact-email" required>
@@ -47,28 +69,32 @@
       <input type="submit" value="Send message">
     </form><br> -->
 
-    <div class="profile">
-      <img src="https://images.unsplash.com/photo-1550483513-b4fd222ce32e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80" class="profile__portrait" alt="A Picture of a table with a laptop on it">
-    </div>
-
-
-    <div class="address-details">
-      Judith Rohrer <br>
-      Berlin, Germany <br>
-      <br>
+  <div class="profile">
+    <h1>Let's get in contact!</h1><br>
+    <img
+      src="https://images.unsplash.com/photo-1550483513-b4fd222ce32e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80"
+      class="profile__portrait" alt="A Picture of a table with a laptop on it">
+    <h3>Judith Rohrer</h3>
+    <p>Berlin, Germany <br>
       <!-- Tel: <a href="tel:+49000000000">+49 123 4567890</a> <br> -->
-      Skype: <a href="skype:judyfox1.1"> Judith Rohrer </a> <br>
-      Email: <a href="mailto:hello@judithrohrer.com">hello@judithrohrer.com</a> <br>
-    </div>
+      Skype: <a href="skype:judyfox1.1"> Judith Rohrer </a><br>
+      Email: <a href="mailto:hello@judithrohrer.com">hello@judithrohrer.com</a></p>
   </div>
+
   <footer class="page-footer">
     <p>Find me on</p>
     <div class="social-media">
       <a href="https://github.com/JudithRohrer" target="_blank"><img src="img/iconGithub.svg" alt="GitHub Logo"></a>
       <a href="https://twitter.com/BigJ1000" target="_blank"><img src="img/iconTwitter.svg" alt="Twitter Logo"></a>
-      <a href="https://www.linkedin.com/in/judith-rohrer-29b83899/" target="_blank"><img src="img/iconLinkedIn.svg" alt="LinkedIn Logo"></a>
+      <a href="https://www.linkedin.com/in/judith-rohrer-29b83899/" target="_blank"><img src="img/iconLinkedIn.svg"
+          alt="LinkedIn Logo"></a>
     </div>
   </footer>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
   <script src="js/tota11y.min.js"></script>
   <script src="js/scripts.js"></script>
 </body>

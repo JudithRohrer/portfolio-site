@@ -6,13 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Portfolio - Judith Rohrer</title>
   <link rel="shortcut icon" href="img/favicon-96x96.ico">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700,800,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700,800,900&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/style.production.css">
 </head>
 
 <body>
-  <header class="page-header">
+  <!-- <header class="page-header">
     <a href="index.html"><img class="page-header__item" id="logo__header" src="img/Logo_Judith_Rohrer.png" alt="Logo
     of Judith Rohrer. A geometric black fox with Judith Rohrer written in capital letters next to it"></a>
     <nav class="main-navigation page-header__item">
@@ -27,11 +31,29 @@
           <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
         </li>
         <li role="presentation">
-         <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+          <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
         </li>
       </ul>
     </nav>
-  </header>
+  </header> -->
+
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="index.html"><img src="img/Logo_Judith_Rohrer.png" height="65"
+        class="d-inline-block align-top" alt="Logo of Judith Rohrer. A geometric black fox on white background." />
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" href="index.html">Home</a>
+        <a class="nav-item nav-link active" href="work.html">Work<span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="about.html">About</a>
+        <a class="nav-item nav-link" href="contact.html">Contact</a>
+      </div>
+    </div>
+  </nav>
 
   <!--Main content -->
   <section>
@@ -39,73 +61,103 @@
     <div class="grid">
       <div class="grid__item">
         <h2>Portfolio Website</h2>
-        <a href="https://judithrohrer.github.io/portfolio-site/index.html" target="_blank"><img class="screenshot" src="img/portfolio.png" width="200px" alt="A screenshot of Judith Rohrers portfoliosite"></a>
+        <a href="https://judithrohrer.github.io/portfolio-site/index.html" target="_blank"><img class="screenshot"
+            src="img/portfolio.png" width="200px" alt="A screenshot of Judith Rohrers portfoliosite"></a>
         <p>Within this project, I created this website using HTML, CSS and Javascript.
         </p>
-        <a href="https://github.com/JudithRohrer/portfolio-site" target="_blank">See more on GitHub</a><br>
-        <a href="https://judithrohrer.github.io/portfolio-site/index.html" target="_blank">Live demo</a>
+        <a href="https://github.com/JudithRohrer/portfolio-site" class="badge badge-light" target="_blank">See more on
+          GitHub</a><br>
+        <a href="https://judithrohrer.github.io/portfolio-site/index.html" class="badge badge-light"
+          target="_blank">Live demo</a>
       </div>
       <div class="grid__item">
         <h2>JS-app</h2>
-        <a href="https://judithrohrer.github.io/simple-js-app/" target="_blank"><img class="screenshot" src="img/poke.png" width="200px" alt="A screenshot JS-app"></a>
-        <p>Within this project, I created an app and for that an API with vanilla Javascript. When Clicking on a pokemon, a modal appears and displays all the pokemons infos. This project also includes HTML and CSS.
+        <a href="https://judithrohrer.github.io/simple-js-app/" target="_blank"><img class="screenshot"
+            src="img/poke.png" width="200px" alt="A screenshot JS-app"></a>
+        <p>Within this project, I created an app and for that an API with vanilla Javascript. When Clicking on a
+          pokemon, a modal appears and displays all the pokemons infos. This project also includes HTML and CSS.
         </p>
-        <a href="https://github.com/JudithRohrer/simple-js-app" target="_blank">See more on GitHub</a><br>
-        <a href="https://judithrohrer.github.io/simple-js-app/" target="_blank">Live demo</a>
+        <a href="https://github.com/JudithRohrer/simple-js-app" class="badge badge-light" target="_blank">See more on
+          GitHub</a><br>
+        <a href="https://judithrohrer.github.io/simple-js-app/" class="badge badge-light" target="_blank">Live demo</a>
       </div>
       <div class="grid__item">
         <h2>jQuery-app</h2>
-        <a href="https://judithrohrer.github.io/simple-jQuery-app/index.html" target="_blank"><img class="screenshot" src="img/dogs.png" width="200px" alt="A screenshot of jQuery-app"></a>
-        <p>Using a pre existing dog API, I created an app showing a bunch of dog types. By clicking on a dog type a modal shows a picture of the dog. Within this project I worked with HTML, CSS, Javascript, jQuery and Bootstrap.
+        <a href="https://judithrohrer.github.io/simple-jQuery-app/index.html" target="_blank"><img class="screenshot"
+            src="img/dogs.png" width="200px" alt="A screenshot of jQuery-app"></a>
+        <p>Using a pre existing dog API, I created an app showing a bunch of dog types. By clicking on a dog type a
+          modal shows a picture of the dog. Within this project I worked with HTML, CSS, Javascript, jQuery and
+          Bootstrap.
         </p>
-        <a href="https://github.com/JudithRohrer/simple-jQuery-app" target="_blank">See more on GitHub</a><br>
-        <a href="https://judithrohrer.github.io/simple-jQuery-app/index.html" target="_blank">Live demo</a>
+        <a href="https://github.com/JudithRohrer/simple-jQuery-app" class="badge badge-light" target="_blank">See more
+          on GitHub</a><br>
+        <a href="https://judithrohrer.github.io/simple-jQuery-app/index.html" class="badge badge-light"
+          target="_blank">Live demo</a>
       </div>
       <div class="grid__item">
         <h2>myFlix - Movie app</h2>
-        <a href="https://myflix-123-db.herokuapp.com/client/" target="_blank"><img class="screenshot" src="img/myflix.png" width="200px" alt="A screenshot of myFlix-app"></a>
+        <a href="https://myflix-123-db.herokuapp.com/client/" target="_blank"><img class="screenshot"
+            src="img/myflix.png" width="200px" alt="A screenshot of myFlix-app"></a>
         <p>This App is built with the MERN stack and gives users access to information about a small choice of movies,
           including information about directors and genres. As a user of this app you are able to sign up, update your
           personal information, create a list of your favorite movies or delete your account. Within this project I
           worked with Javascript, MongoDB, Express, React, Node.js and React Bootstrap.
         </p>
-        <a href="https://github.com/JudithRohrer/myFlix" target="_blank">See more on GitHub</a><br>
-        <a href="https://myflix-123-db.herokuapp.com/client/" target="_blank">Live demo</a>
+        <a href="https://github.com/JudithRohrer/myFlix" class="badge badge-light" target="_blank">See more on
+          GitHub</a><br>
+        <a href="https://myflix-123-db.herokuapp.com/client/" class="badge badge-light" target="_blank">Live demo</a>
       </div>
       <div class="grid__item">
         <h2>Vue - Quiz app</h2>
-        <a href="https://judithrohrer.github.io/my-awesome-quiz-app/welcome" target="_blank"><img class="screenshot" src="img/quiz.png" width="200px" alt="A screenshot of Quiz-app"></a>
-        <p>This project is a simple Quiz-app built with Vue. The main goal of this project was for me to get comfortable with the basics of Vue JS and Vue Materials.
+        <a href="https://judithrohrer.github.io/my-awesome-quiz-app/welcome" target="_blank"><img class="screenshot"
+            src="img/quiz.png" width="200px" alt="A screenshot of Quiz-app"></a>
+        <p>This project is a simple Quiz-app built with Vue. The main goal of this project was for me to get comfortable
+          with the basics of Vue JS and Vue Materials.
         </p>
-        <a href="https://github.com/JudithRohrer/my-awesome-quiz-app" target="_blank">See more on GitHub</a><br>
-        <a href="https://judithrohrer.github.io/my-awesome-quiz-app/welcome" target="_blank">Live demo</a>
+        <a href="https://github.com/JudithRohrer/my-awesome-quiz-app" class="badge badge-light" target="_blank">See more
+          on GitHub</a><br>
+        <a href="https://judithrohrer.github.io/my-awesome-quiz-app/welcome" class="badge badge-light"
+          target="_blank">Live demo</a>
       </div>
       <div class="grid__item">
         <h2>To-do app</h2>
-        <a href="https://judithrohrer.github.io/todo/" target="_blank"><img class="screenshot" src="img/todo.png" width="200px" alt="A screenshot of To-do app"></a>
+        <a href="https://judithrohrer.github.io/todo/" target="_blank"><img class="screenshot" src="img/todo.png"
+            width="200px" alt="A screenshot of To-do app"></a>
         <p>This To-do app was built and designed by me using Vue.
         </p>
-        <a href="https://github.com/JudithRohrer/todo" target="_blank">See more on GitHub</a><br>
-        <a href="https://judithrohrer.github.io/todo/" target="_blank">Live demo</a>
+        <a href="https://github.com/JudithRohrer/todo" class="badge badge-light" target="_blank">See more on
+          GitHub</a><br>
+        <a href="https://judithrohrer.github.io/todo/" class="badge badge-light" target="_blank">Live demo</a>
       </div>
       <div class="grid__item">
         <h2>MeetUp app</h2>
-        <a href="https://judithrohrer.github.io/meetup/" target="_blank"><img class="screenshot" src="img/meetUp.png" width="200px" alt="A screenshot of MeetUp app"></a>
-        <p>This MeetUp app gives users the possibilty to see for upcoming events based on their current location, while opening the app. Users are also able to search for events in other cities and get a quick overview of how many events are being held over the next 7 days and also how many free spots are left on each event visual on charts. Within this test-driven developement process I worked with React, Jest, Enzyme, Puppeteer, Cucumber, Javascript, AWS Lambda and Recharts.
+        <a href="https://judithrohrer.github.io/meetup/" target="_blank"><img class="screenshot" src="img/meetUp.png"
+            width="200px" alt="A screenshot of MeetUp app"></a>
+        <p>This MeetUp app gives users the possibilty to see for upcoming events based on their current location, while
+          opening the app. Users are also able to search for events in other cities and get a quick overview of how many
+          events are being held over the next 7 days and also how many free spots are left on each event visual on
+          charts. Within this test-driven developement process I worked with React, Jest, Enzyme, Puppeteer, Cucumber,
+          Javascript, AWS Lambda and Recharts.
         </p>
-        <a href="https://github.com/JudithRohrer/meetup" target="_blank">See more on GitHub</a><br>
-        <a href="https://judithrohrer.github.io/meetup/" target="_blank">Live demo</a>
+        <a href="https://github.com/JudithRohrer/meetup" class="badge badge-light" target="_blank">See more on
+          GitHub</a><br>
+        <a href="https://judithrohrer.github.io/meetup/" class="badge badge-light" target="_blank">Live demo</a>
       </div>
       <div class="grid__item">
         <h2>Chat app</h2>
         <video class="video" width="200" height="350" controls>
-          <source src="img/appVideo_.mp4" alt="A demo video of Chat app" type="video/mp4"/>
+          <source src="img/appVideo_.mp4" alt="A demo video of Chat app" type="video/mp4" />
           Your browser doesn't support this format
         </video><br>
-        <p>With this project, I created a Chat App with React Native and Gifted Chat. The App gives the user the possibility to type in his name and customize the background colour of the chatroom. User can start chatting immediately and send pictures and their location. With google firestore messages, images and locations can be stored and chat history can be displayed even the user is offline.
-           Within this project, I also worked with JSDoc and Expo.</p>
-        <a href="https://github.com/JudithRohrer/hello-world" target="_blank">See more on GitHub</a><br>
-        <a href="https://trello.com/b/R7TdIZHc/native-react-chat-app" target="_blank">Project's Kanban Board</a>
+        <p>With this project, I created a Chat App with React Native and Gifted Chat. The App gives the user the
+          possibility to type in his name and customize the background colour of the chatroom. User can start chatting
+          immediately and send pictures and their location. With google firestore messages, images and locations can be
+          stored and chat history can be displayed even the user is offline.
+          Within this project, I also worked with JSDoc and Expo.</p>
+        <a href="https://github.com/JudithRohrer/hello-world" class="badge badge-light" target="_blank">See more on
+          GitHub</a><br>
+        <a href="https://trello.com/b/R7TdIZHc/native-react-chat-app" class="badge badge-light"
+          target="_blank">Project's Kanban Board</a>
       </div>
 
     </div>
@@ -117,9 +169,15 @@
     <div class="social-media">
       <a href="https://github.com/JudithRohrer" target="_blank"><img src="img/iconGithub.svg" alt="GitHub Logo"></a>
       <a href="https://twitter.com/BigJ1000" target="_blank"><img src="img/iconTwitter.svg" alt="Twitter Logo"></a>
-      <a href="https://www.linkedin.com/in/judith-rohrer-29b83899/" target="_blank"><img src="img/iconLinkedIn.svg" alt="LinkedIn Logo"></a>
+      <a href="https://www.linkedin.com/in/judith-rohrer-29b83899/" target="_blank"><img src="img/iconLinkedIn.svg"
+          alt="LinkedIn Logo"></a>
     </div>
   </footer>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
   <script src="js/tota11y.min.js"></script>
   <script src="js/scripts.js"></script>
 </body>
